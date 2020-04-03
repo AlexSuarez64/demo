@@ -1,0 +1,53 @@
+{
+    "BranchAgentContactId": 0,
+    "InsuredContact": {
+        "ContactId": 0,
+        "NameTypeId": 0,
+        "FirstName": "Ins GTA Prospect",
+        "EntityTypeId": 2,
+        "Addresses": [
+            {
+                "AddressId": 0,
+                "CountryCode": "AUS",
+                "ZipCode": "",
+                "StreetAddress": "",
+                "StateCode": "",
+                "City": "",
+                "AddressTypes": [
+                    3,
+                    5
+                ]
+            }
+        ]
+    },
+    "NewBusinessSub": {
+        "PolicyId": 0,
+        "PolicyTxnId": 0,
+        "PolicyTxnNum": 0,
+        "InsuredContactId": 0,
+        "PolicyProducerContactId": 0,
+        "SubCompanyCode": "GTA",
+        "PolicyTypeId": 0,
+        "TermTypeId": 0,
+        "User1Id": 0,
+        "User2Id": 0,
+        "NextRenewalOptionId": 0,
+        "SubmissionTypeId": 0,
+        "PolicyYear": "",
+        "CountryCode": "AUS",
+        "StateId": 117,
+        "CurrencyCode": "AUD",
+        "TxnPayPlanId": 0,
+        "TxnBillToContactId": 0,
+        "BusClassId": 0,
+        "BusSubClassId": 0,
+        "DateReceived": "",
+        "CreateActivityLogItem": {
+            "ActivityDate": "",
+            "ActivityType": "QuotePending",
+            "CreationDate": "",
+            "Description": "Received Date changed.",
+            "LoggedInUser": ""
+        }
+    }
+}

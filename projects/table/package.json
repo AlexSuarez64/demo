@@ -1,0 +1,13 @@
+{
+  "name": "table",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^9.0.5",
+    "@angular/core": "^9.0.5",
+    "@angular/cdk/collections": "^9.0.5",
+    "@angular/material/paginator": "^9.0.5",
+    "@angular/material/sort": "^9.0.5",
+    "@angular/material/table": "^9.0.5",
+    "tslib": "^1.10.0"
+  }
+}

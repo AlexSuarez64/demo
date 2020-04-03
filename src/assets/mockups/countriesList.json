@@ -1,0 +1,26 @@
+[{
+    "ItemID": "7d62287a-939e-4197-89c9-7ff305f8e7a2",
+    "ItemName": "Thailand",
+    "Key": "THAILAND",
+    "Phrase": "Thailand"
+}, {
+    "ItemID": "5e7702e9-44ba-4896-af1e-2fc4172e175e",
+    "ItemName": "Malaysia",
+    "Key": "MALAYSIA",
+    "Phrase": "Malaysia"
+}, {
+    "ItemID": "1ae8c86c-2540-4d55-91cf-e3c895536efa",
+    "ItemName": "Singapore",
+    "Key": "SINGAPORE",
+    "Phrase": "Singapore"
+}, {
+    "ItemID": "77848fc4-0fd8-4548-a1ea-682c79ef5a34",
+    "ItemName": "Australia",
+    "Key": "AUSTRALIA",
+    "Phrase": "Australia"
+}, {
+    "ItemID": "d345549a-b461-4dbe-8ded-0df1c280d9e7",
+    "ItemName": "Japan",
+    "Key": "JAPAN",
+    "Phrase": "Japan"
+}]

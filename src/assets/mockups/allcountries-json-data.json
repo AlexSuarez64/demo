@@ -1,0 +1,2006 @@
+{
+    "Countries":[
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"ABW",
+          "CountryName":"ARUBA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "CalamityDescription":"Calamity Jane 1001",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"AFG",
+          "CountryName":"AFGHANISTAN",
+          "AllowTravel":true,
+          "HasCalamity":true,
+          "CalamityDescription":"Calamity Jane 1002",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"AGO",
+          "CountryName":"ANGOLA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "CalamityDescription":"Calamity Jane 1003",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"ALB",
+          "CountryName":"ALBANIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"ARE",
+          "CountryName":"UNITED ARAB EMIRATES",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"ARG",
+          "CountryName":"ARGENTINA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"ARM",
+          "CountryName":"ARMENIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"ASM",
+          "CountryName":"AMERICAN SAMOA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"ATA",
+          "CountryName":"ANTARCTICA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"ATG",
+          "CountryName":"ANTIGUA AND BARBUDA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Pacific",
+          "RatingRegionName":"Domestic",
+          "CountryCode":"AUS",
+          "CountryName":"AUSTRALIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1,
+          "IsDomestic":true
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"AUT",
+          "CountryName":"AUSTRIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"AZE",
+          "CountryName":"AZERBAIJAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"BEL",
+          "CountryName":"BELGIUM",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"BEN",
+          "CountryName":"BENIN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"BFA",
+          "CountryName":"BURKINA FASO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"BGR",
+          "CountryName":"BULGARIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"BHR",
+          "CountryName":"BAHRAIN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"BHS",
+          "CountryName":"BAHAMAS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"BIH",
+          "CountryName":"BOSNIA AND HERZEGOVINA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"BLR",
+          "CountryName":"BELARUS",
+          "AllowTravel":true,
+          "HasCalamity":true,
+          "CalamityDescription":"Please be aware of an active travel alert for BELARUS",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"BLZ",
+          "CountryName":"BELIZE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"BMU",
+          "CountryName":"BERMUDA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"BOL",
+          "CountryName":"BOLIVIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"BRA",
+          "CountryName":"BRAZIL",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"BRB",
+          "CountryName":"BARBADOS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"BRN",
+          "CountryName":"BRUNEI DARUSSALAM",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"BTN",
+          "CountryName":"BHUTAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"BWA",
+          "CountryName":"BOTSWANA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"CAF",
+          "CountryName":"CENTRAL AFRICAN REPUBLIC",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Americas",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"CAN",
+          "CountryName":"CANADA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"CCK",
+          "CountryName":"COCOS (KEELING) ISLANDS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Europe",
+          "RatingRegionName":"Europe",
+          "CountryCode":"CHE",
+          "CountryName":"SWITZERLAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"CHL",
+          "CountryName":"CHILE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"CHN",
+          "CountryName":"CHINA",
+          "AllowTravel":true,
+          "HasCalamity":true,
+          "CalamityDescription":"Please be aware of an active travel alert for CHINA",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"CIV",
+          "CountryName":"CÔTE D'IVOIRE (Ivory Coast)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"CMR",
+          "CountryName":"CAMEROON",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"COD",
+          "CountryName":"CONGO (formerly Zaire)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"COG",
+          "CountryName":"CONGO, REPUBLIC OF",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"COK",
+          "CountryName":"COOK ISLANDS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"COL",
+          "CountryName":"COLOMBIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"COM",
+          "CountryName":"COMOROS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"CPV",
+          "CountryName":"CAPE VERDE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"CRI",
+          "CountryName":"COSTA RICA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"CUB",
+          "CountryName":"CUBA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"CXR",
+          "CountryName":"CHRISTMAS ISLAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"CYM",
+          "CountryName":"CAYMAN ISLANDS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"CYP",
+          "CountryName":"CYPRUS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"CZE",
+          "CountryName":"CZECH REPUBLIC",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Europe",
+          "RatingRegionName":"Europe",
+          "CountryCode":"DEU",
+          "CountryName":"GERMANY",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"DJI",
+          "CountryName":"DJIBOUTI",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"DMA",
+          "CountryName":"DOMINICA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"DNK",
+          "CountryName":"DENMARK",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"DOM",
+          "CountryName":"DOMINICAN REPUBLIC",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"DZA",
+          "CountryName":"ALGERIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"ECU",
+          "CountryName":"ECUADOR",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"EGY",
+          "CountryName":"EGYPT",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"ERI",
+          "CountryName":"ERITREA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Europe",
+          "RatingRegionName":"Europe",
+          "CountryCode":"ESP",
+          "CountryName":"SPAIN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"EST",
+          "CountryName":"ESTONIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"ETH",
+          "CountryName":"ETHIOPIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"FIN",
+          "CountryName":"FINLAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Pacific",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"FJI",
+          "CountryName":"FIJI",
+          "AllowTravel":true,
+          "HasCalamity":true,
+          "CalamityDescription":"Calamity Jane 1002",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"FLK",
+          "CountryName":"FALKLAND ISLANDS (MALVINAS)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Europe",
+          "RatingRegionName":"Europe",
+          "CountryCode":"FRA",
+          "CountryName":"FRANCE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"FRO",
+          "CountryName":"FAEROE ISLANDS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"FSM",
+          "CountryName":"MICRONESIA ",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"GAB",
+          "CountryName":"GABON",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Europe",
+          "RatingRegionName":"UK",
+          "CountryCode":"GBR",
+          "CountryName":"UNITED KINGDOM",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"GEO",
+          "CountryName":"GEORGIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"GHA",
+          "CountryName":"GHANA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"GIB",
+          "CountryName":"GIBRALTAR",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"GIN",
+          "CountryName":"GUINEA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"GLP",
+          "CountryName":"GUADELOUPE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"GMB",
+          "CountryName":"GAMBIA, THE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"GNB",
+          "CountryName":"GUINEA-BISSAU",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"GNQ",
+          "CountryName":"EQUATORIAL GUINEA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"GRC",
+          "CountryName":"GREECE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"GRD",
+          "CountryName":"GRENADA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"GRL",
+          "CountryName":"GREENLAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"GTM",
+          "CountryName":"GUATEMALA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"GUF",
+          "CountryName":"FRENCH GUIANA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"GUM",
+          "CountryName":"GUAM",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"GUY",
+          "CountryName":"GUYANA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Asia",
+          "RatingRegionName":"Asia",
+          "CountryCode":"HKG",
+          "CountryName":"HONG KONG",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"HND",
+          "CountryName":"HONDURAS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"HRV",
+          "CountryName":"CROATIA (Hrvatska)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "CalamityDescription":"Calamity Jane 1003",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"HTI",
+          "CountryName":"HAITI",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"HUN",
+          "CountryName":"HUNGARY",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Pacific",
+          "RatingRegionName":"Indonesia and Bali",
+          "CountryCode":"IDN",
+          "CountryName":"INDONESIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"IMN",
+          "CountryName":"ISLE OF MAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"IND",
+          "CountryName":"INDIA",
+          "AllowTravel":true,
+          "HasCalamity":true,
+          "CalamityDescription":"Test",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"IRL",
+          "CountryName":"IRELAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"IRN",
+          "CountryName":"IRAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"IRQ",
+          "CountryName":"IRAQ",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"ISL",
+          "CountryName":"ICELAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"ISR",
+          "CountryName":"ISRAEL",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Europe",
+          "RatingRegionName":"Europe",
+          "CountryCode":"ITA",
+          "CountryName":"ITALY",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"JAM",
+          "CountryName":"JAMAICA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"JOR",
+          "CountryName":"JORDAN ",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Asia",
+          "RatingRegionName":"Asia",
+          "CountryCode":"JPN",
+          "CountryName":"JAPAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"KAZ",
+          "CountryName":"KAZAKHSTAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"KEN",
+          "CountryName":"KENYA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"KGZ",
+          "CountryName":"KYRGYZSTAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"KHM",
+          "CountryName":"CAMBODIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"KIR",
+          "CountryName":"KIRIBATI",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"KNA",
+          "CountryName":"SAINT KITTS AND NEVIS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"KOR",
+          "CountryName":"SOUTH KOREA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"KWT",
+          "CountryName":"KUWAIT",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"LAO",
+          "CountryName":"LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"LBN",
+          "CountryName":"LEBANON",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"LBR",
+          "CountryName":"LIBERIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"LBY",
+          "CountryName":"LIBYA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"LCA",
+          "CountryName":"SAINT LUCIA",
+          "AllowTravel":true,
+          "HasCalamity":true,
+          "CalamityDescription":"Calamity Jane 1004",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"LIE",
+          "CountryName":"LIECHTENSTEIN ",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"LKA",
+          "CountryName":"SRI LANKA (formerly Ceylon)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"LSO",
+          "CountryName":"LESOTHO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"LTU",
+          "CountryName":"LITHUANIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"LUX",
+          "CountryName":"LUXEMBOURG",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"LVA",
+          "CountryName":"LATVIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"MAC",
+          "CountryName":"MACAO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"MAR",
+          "CountryName":"MOROCCO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"MCO",
+          "CountryName":"MONACO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"MDA",
+          "CountryName":"MOLDOVA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"MDG",
+          "CountryName":"MADAGASCAR",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"MDV",
+          "CountryName":"MALDIVES",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"MEX",
+          "CountryName":"MEXICO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"MHL",
+          "CountryName":"MARSHALL ISLANDS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"MKD",
+          "CountryName":"MACEDONIA ",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"MLI",
+          "CountryName":"MALI",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"MLT",
+          "CountryName":"MALTA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"MMR",
+          "CountryName":"MYANMAR (formerly Burma)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"MNE",
+          "CountryName":"MONTENEGRO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"MNG",
+          "CountryName":"MONGOLIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"MNP",
+          "CountryName":"NORTHERN MARIANA ISLANDS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"MOZ",
+          "CountryName":"MOZAMBIQUE (Moçambique)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"MRT",
+          "CountryName":"MAURITANIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"MSR",
+          "CountryName":"MONTSERRAT",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"MTQ",
+          "CountryName":"MARTINIQUE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"MUS",
+          "CountryName":"MAURITIUS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"MWI",
+          "CountryName":"MALAWI",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Asia",
+          "RatingRegionName":"Asia",
+          "CountryCode":"MYS",
+          "CountryName":"MALAYSIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"NAM",
+          "CountryName":"NAMIBIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"NCL",
+          "CountryName":"NEW CALEDONIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"NER",
+          "CountryName":"NIGER",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Domestic",
+          "CountryCode":"NFK",
+          "CountryName":"NORFOLK ISLAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"NGA",
+          "CountryName":"NIGERIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"NIC",
+          "CountryName":"NICARAGUA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"NIU",
+          "CountryName":"NIUE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Europe",
+          "RatingRegionName":"Europe",
+          "CountryCode":"NLD",
+          "CountryName":"NETHERLANDS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"NOR",
+          "CountryName":"NORWAY",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"NPL",
+          "CountryName":"NEPAL",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"NRU",
+          "CountryName":"NAURU",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Pacific",
+          "RatingRegionName":"New Zealand",
+          "CountryCode":"NZL",
+          "CountryName":"NEW ZEALAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"OMN",
+          "CountryName":"OMAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"PAK",
+          "CountryName":"PAKISTAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"PAN",
+          "CountryName":"PANAMA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"PCN",
+          "CountryName":"PITCAIRN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"PER",
+          "CountryName":"PERU",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"PHL",
+          "CountryName":"PHILIPPINES",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"PLW",
+          "CountryName":"PALAU",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"PNG",
+          "CountryName":"PAPUA NEW GUINEA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"POL",
+          "CountryName":"POLAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"PRI",
+          "CountryName":"PUERTO RICO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"PRK",
+          "CountryName":"NORTH KOREA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"PRT",
+          "CountryName":"PORTUGAL",
+          "AllowTravel":false,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"PRY",
+          "CountryName":"PARAGUAY",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"PYF",
+          "CountryName":"FRENCH POLYNESIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"QAT",
+          "CountryName":"QATAR",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"REU",
+          "CountryName":"RÉUNION",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"ROU",
+          "CountryName":"ROMANIA",
+          "AllowTravel":false,
+          "HasCalamity":true,
+          "CalamityDescription":"Calamity Jane 1006",
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"RUS",
+          "CountryName":"RUSSIAN FEDERATION",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"RWA",
+          "CountryName":"RWANDA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"SAU",
+          "CountryName":"SAUDI ARABIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"SDN",
+          "CountryName":"SUDAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"SEN",
+          "CountryName":"SENEGAL",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Asia",
+          "RatingRegionName":"Asia",
+          "CountryCode":"SGP",
+          "CountryName":"SINGAPORE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"SLB",
+          "CountryName":"SOLOMON ISLANDS",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"SLE",
+          "CountryName":"SIERRA LEONE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"SLV",
+          "CountryName":"EL SALVADOR",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"SMR",
+          "CountryName":"SAN MARINO (Republic of)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"SOM",
+          "CountryName":"SOMALIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"SRB",
+          "CountryName":"SERBIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"STP",
+          "CountryName":"SAO TOME AND PRINCIPE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"SUR",
+          "CountryName":"SURINAME",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"SVK",
+          "CountryName":"SLOVAKIA (Slovak Republic)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"SVN",
+          "CountryName":"SLOVENIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"SWE",
+          "CountryName":"SWEDEN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"SWZ",
+          "CountryName":"SWAZILAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"SYC",
+          "CountryName":"SEYCHELLES",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"SYR",
+          "CountryName":"SYRIAN ARAB REPUBLIC",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"TCD",
+          "CountryName":"CHAD (Tchad)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"TGO",
+          "CountryName":"TOGO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Asia",
+          "RatingRegionName":"Asia",
+          "CountryCode":"THA",
+          "CountryName":"THAILAND",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "IsDomestic":true,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"TJK",
+          "CountryName":"TAJIKISTAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"TKM",
+          "CountryName":"TURKMENISTAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"TLS",
+          "CountryName":"TIMOR-LESTE ",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"TTO",
+          "CountryName":"TRINIDAD AND TOBAGO",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"TUN",
+          "CountryName":"TUNISIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"TUR",
+          "CountryName":"TURKEY",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"TUV",
+          "CountryName":"TUVALU",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Asia",
+          "CountryCode":"TWN",
+          "CountryName":"TAIWAN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"TZA",
+          "CountryName":"TANZANIA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"UGA",
+          "CountryName":"UGANDA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"UKR",
+          "CountryName":"UKRAINE",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"URY",
+          "CountryName":"URUGUAY",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Americas",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"USA",
+          "CountryName":"UNITED STATES",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"UZB",
+          "CountryName":"UZBEKISTAN",
+          "AllowTravel":false,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Europe",
+          "CountryCode":"VAT",
+          "CountryName":"VATICAN CITY (Holy See)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"VCT",
+          "CountryName":"SAINT VINCENT AND THE GRENADINES",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"VEN",
+          "CountryName":"VENEZUELA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"VGB",
+          "CountryName":"VIRGIN ISLANDS, BRITISH",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"North and South America",
+          "CountryCode":"VIR",
+          "CountryName":"VIRGIN ISLANDS, U.S.",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Asia",
+          "RatingRegionName":"Asia",
+          "CountryCode":"VNM",
+          "CountryName":"VIET NAM",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Pacific",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"VUT",
+          "CountryName":"VANUATU",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"WLF",
+          "CountryName":"WALLIS AND FUTUNA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Pacific",
+          "CountryCode":"WSM",
+          "CountryName":"SAMOA",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"YEM",
+          "CountryName":"YEMEN",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"Africa",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"ZAF",
+          "CountryName":"SOUTH AFRICA (Zuid Afrika)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"ZMB",
+          "CountryName":"ZAMBIA (formerly Northern Rhodesia)",
+          "AllowTravel":true,
+          "HasCalamity":false,
+          "SortOrder":1
+       },
+       {
+          "DisplayRegionName":"",
+          "RatingRegionName":"Africa & Middle East",
+          "CountryCode":"ZWE",
+          "CountryName":"ZIMBABWE",
+          "AllowTravel":false,
+          "HasCalamity":true,
+          "CalamityDescription":"Calamity Jane 1006",
+          "SortOrder":1
+       }
+    ]
+ }

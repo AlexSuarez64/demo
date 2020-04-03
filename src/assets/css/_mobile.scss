@@ -1,0 +1,96 @@
+@media (max-width: 1199px) {
+    /* quote steps */
+    #steps {
+        display: none;
+    }
+    .m-steps {
+        display: flex;
+        margin-top: 30px;
+    }
+    .m-steps ul {
+        display: flex;
+        flex-direction: row;
+        padding: 5px 0 0 0;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 70%;
+        margin: auto;
+        position: relative;
+    }
+    .m-steps ul:after {
+        content: '';
+        height: 10px;
+        background: #ddd;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top: 15px;
+        z-index: 0;
+    }
+    .m-steps li {
+        list-style-type: none;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: block;
+        background: #ddd;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+    }
+    .m-steps li a span {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #F8DB00!important;
+        font-size: 16px;
+    }
+    .m-steps li a:after {
+        content: ' ';
+        width: 14px;
+        height: 14px;
+        background: transparent;
+        border-radius: 50px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+    .m-steps li.circle-complete {
+        background: #F8DB00 !important;
+    }
+    .m-steps li.circle-complete a:after {
+        background: #fff !important
+    }
+}
+
+@media (max-width: 768px) {
+    .m-steps ul {
+        width: 80%;
+    }
+    .m-steps li a {
+        font-size: 14px;
+    }
+    #mobile-nav-toggle {
+        display: inline;
+    }
+    .back-to-top {
+        bottom: 15px;
+    }
+    .navbar-collapse {
+        background-color: #FFF;
+        /*background-color: hsla(11, 0%, 0%, 0.6);*/
+        padding: 20px;
+    }
+    #header.header-fixed {
+        height: 185px;
+    }
+    .quote {
+        position: relative;
+    }
+    .jumbotron {
+        height: auto;
+    }
+}

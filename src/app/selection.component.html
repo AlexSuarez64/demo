@@ -1,0 +1,15 @@
+<lib-header [heading]="'Tokio Marine Model View'"></lib-header>
+<div *ngIf="showSelection" style="margin-left: 5%">
+  <mat-form-field>
+      <mat-label>Models</mat-label>
+      <mat-select>
+          <mat-option *ngFor="let model of selections" [value]="model.value" (onSelectionChange)="loadModel($event)">
+              {{model.label}}
+          </mat-option>
+      </mat-select>
+  </mat-form-field>
+</div>
+<div *ngIf="!showSelection" style="width: 95% !important" class="mat-elevation-z8 table-width">
+  <h4 style="color: blue; margin-left: 4.1%"><strong>{{model}}</strong></h4>
+  <lib-table [data]="data" [displayColumns]="displayColumns" [selectedColumns]="selectedColumns" [model]="model"></lib-table>
+</div>

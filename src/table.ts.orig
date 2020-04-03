@@ -1,0 +1,392 @@
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { SelectionModel } from '@angular/cdk/collections';
+import { each, some, map as lodashmap } from 'lodash';
+import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Sort } from '@angular/material/sort';
+
+import { LineItemQueryParamsService } from 'src/app/core/services/line-item-query-params.service';
+import { LineItem } from 'src/app/core/models/line-item.interface';
+import { ModalDisplayService } from 'src/app/core/services/modal-display.service';
+import { TranslateService } from '@ngx-translate/core';
+import { LineItemService } from 'src/app/core/services/line-item.service';
+import { LineItemDialogComponent } from '../line-item-dialog/line-item-dialog.component';
+import { PageEvent } from '@angular/material/paginator';
+import { ApiService } from 'src/app/core/services/api.service';
+import { LineItemResponse } from 'src/app/core/interfaces/line-item-response.interface';
+import { API_ROUTES } from 'src/config/api-routes.constants';
+import { BehaviorSubject } from 'rxjs';
+import { FILTER_BY, LINE_ITEM_TABLE_SERVICE, LINE_ITEM_QUERY_PARAMS_SERVICE } from 'src/app/constants/services.constants';
+import { GroupingMetaData } from 'src/app/core/interfaces/grouping-metadata.interface';
+import { FlagDialogComponent } from '../flag-dialog/flag-dialog.component';
+import { SORT_DIRECTION, FORM_FIELDS, REASONS } from 'src/app/constants/columns.constants';
+import { FileService } from 'src/app/core/services/file.service';
+import { OrganizationService } from 'src/app/core/services/organization.service';
+import { Member } from 'src/app/core/interfaces/member.interface';
+import { DynamicColumnsService } from 'src/app/core/services/dynamic-columns.service';
+import { DynamicColumn } from 'src/app/core/interfaces/dynamic-column.interface';
+
+@Component({
+  selector: 'app-line-item-table',
+  templateUrl: './line-item-table.component.html',
+  styleUrls: ['./line-item-table.component.scss']
+})
+export class LineItemTableComponent implements OnInit {
+  @Input('group') group: GroupingMetaData;
+  @Output() itemsPerPage: EventEmitter<any> = new EventEmitter();
+  selection = new SelectionModel<LineItem>(true, []);
+  dataSource: LineItem[] = [];
+  defaultColumns: string[] = [];
+  lineItem: LineItem;
+  displayedColumns: string[] = [];
+  workColumns: string[] = [];
+  selectedTab;
+  length: number;
+  i: number;
+  error: any;
+  other: string;
+  second: string;
+  width: string;
+  panelClass: string;
+  label: string;
+  pageSize: BehaviorSubject<number> = new BehaviorSubject(LINE_ITEM_TABLE_SERVICE.PAGE_SIZE);
+  pageNumber: BehaviorSubject<number> = new BehaviorSubject(LINE_ITEM_TABLE_SERVICE.DEFAULT_PAGE_NUMBER);
+  sortDirection: BehaviorSubject<string> = new BehaviorSubject(SORT_DIRECTION.DESCENDING);
+  sortColumn: BehaviorSubject<string> = new BehaviorSubject(FORM_FIELDS.TOTAL_PRICE);
+  recycledTooltip = this.translateService.instant('tooltips.recycledTooltip');
+
+  constructor(
+    private lineItemQueryParamsService: LineItemQueryParamsService,
+    private modalDisplayService: ModalDisplayService,
+    private translateService: TranslateService,
+    private lineItemService: LineItemService,
+    private organizationService: OrganizationService,
+    private dynamicColumnsService: DynamicColumnsService,
+    private fileService: FileService,
+    private apiService: ApiService,
+    public dialog: MatDialog,
+    private snackBar: MatSnackBar
+  ) { }
+
+  ngOnInit() {
+    this.getLineItems(this.group.id);
+    this.setColumns();
+    this.setShowColumns();
+    this.getMembers();
+  }
+
+  getMembers() {
+    if (
+      this.selectedTab === LINE_ITEM_QUERY_PARAMS_SERVICE.TABS.DRAFTS.VALUE ||
+      this.selectedTab === LINE_ITEM_QUERY_PARAMS_SERVICE.TABS.DENIED ||
+      this.selectedTab === LINE_ITEM_QUERY_PARAMS_SERVICE.TABS.PENDING
+    ) {
+      this.organizationService.getOrganizationMembers().subscribe(this.initializeSelectedMembers);
+    }
+  }
+
+  initializeSelectedMembers = (payload: Member[]) => {
+    for (const f of this.lineItemService.formFields) {
+      if (f.id === FORM_FIELDS.FIELD_REPRESENTATIVE_EMAIL) {
+        f.options = [];
+        for (const m of payload) {
+          f.options.push({ label: m.displayName, value: m.uuid });
+        }
+      }
+    }
+  }
+
+
+  // #region Initialize data
+  getLineItems(grouping: string) {
+    const params = {
+      invoiceId: grouping,
+      pageNumber: this.pageNumber.value,
+      pageSize: this.pageSize.value,
+      sortDirection: this.sortDirection.value,
+      sortColumn: this.sortColumn.value,
+      ...this.lineItemQueryParamsService.queryParams.value
+    };
+
+    this.apiService.get<LineItemResponse>(API_ROUTES().SERVICE_CONFIRMATION.LINE_ITEMS(''), params)
+      .subscribe((result: LineItemResponse) => {
+        this.dataSource = result.results;
+        this.length = result.totalCount;
+        this.updateCheckboxes();
+        this.emitLineItemsInView();
+      });
+  }
+
+  setColumns() {
+    this.lineItemQueryParamsService.statusTabSelected.subscribe(selected => {
+      this.selectedTab = selected.value;
+      // TODO - update default columns to remove ngIf in HTML
+      this.defaultColumns = [];
+      this.lineItemService.formFields.forEach(c => {
+        this.lineItemService.displayColumns.forEach(dc => {
+          if (c.id === dc.name) {
+            this.defaultColumns.push(dc.name);
+          }
+        });
+      });
+      this.defaultColumns.unshift('checkbox');
+      this.defaultColumns.unshift('flags');
+      
+      switch (this.selectedTab) {
+        case 'Approved':
+          this.displayedColumns = [...this.defaultColumns, 'dateApproved', 'attachment', 'actions'];
+          break;
+        case 'Denied':
+          this.displayedColumns = [...this.defaultColumns, 'dateDenied', 'attachment', 'actions'];
+          break;
+        case 'Deleted':
+          this.displayedColumns = [...this.defaultColumns, 'dateDeleted', 'attachment', 'actions'];
+          break;
+        case 'All':
+          this.displayedColumns = [...this.defaultColumns, 'attachment', 'actions'];
+          break;
+        default:
+          this.displayedColumns = [...this.defaultColumns, 'attachment', 'actions'];
+          break;
+      }
+    });
+  }
+
+  setShowColumns() {
+    this.dynamicColumnsService.showColumns.subscribe((columns: DynamicColumn[]) => {
+      this.defaultColumns = [];
+      this.lineItemService.formFields.forEach(c => {
+        columns.forEach(dc => {
+          if (c.id === dc.name) {
+            this.defaultColumns.push(dc.name);
+          }
+        });
+      });
+      this.defaultColumns.unshift('checkbox');
+      this.defaultColumns.unshift('flags');
+      
+      switch (this.selectedTab) {
+        case 'Approved':
+          this.displayedColumns = [...this.defaultColumns, 'dateApproved', 'attachment', 'actions'];
+          break;
+        case 'Denied':
+          this.displayedColumns = [...this.defaultColumns, 'dateDenied', 'attachment', 'actions'];
+          break;
+        case 'Deleted':
+          this.displayedColumns = [...this.defaultColumns, 'dateDeleted', 'attachment', 'actions'];
+          break;
+        case 'All':
+          this.displayedColumns = [...this.defaultColumns, 'attachment', 'actions'];
+          break;
+        default:
+          this.displayedColumns = [...this.defaultColumns, 'attachment', 'actions'];
+          break;
+      }
+    });
+  }
+
+  // #region Checkbox selection and displays
+  updateCheckboxes() {
+    this.modalDisplayService.allSelections.subscribe(value => {
+      this.selection.clear();
+      if (value) {
+        each(value, (newItem: LineItem) => {
+          if (some(this.dataSource, [FILTER_BY.ID, newItem.id]) && !some(this.selection.selected, [FILTER_BY.ID, newItem.id])) {
+            this.selection.select(newItem);
+          }
+        });
+      }
+    });
+  }
+
+  checkGroupingSelection(lineItem: any): boolean {
+    return this.selection.selected.some(item => item.id === lineItem.id);
+  }
+
+  sendToLocalSelection(item) {
+    // ensure that all selected items are removed that match the id
+    this.i = 0;
+    this.selection.selected.forEach(s => {
+      if (s.id === item.id) {
+        this.i++;
+        this.selection.deselect(s);
+      }
+    });
+    // If no selected items removed then select item
+    if (this.i === 0) {
+      this.selection.select(item);
+    }
+
+    some(this.selection.selected, [FILTER_BY.ID, item.id]) ? this.sendToModal([item]) : this.removeFromModal([item]);
+    this.emitLineItemsInView();
+  }
+
+  sendToModal(data) {
+    this.modalDisplayService.addSelection(data);
+  }
+
+  removeFromModal(data) {
+    this.modalDisplayService.removeSelection(data);
+  }
+  // #endRegion
+
+  // #region Server Side Pagination and Sorting
+  emitLineItemsInView() {
+    const itemsOnPage = this.dataSource.length < this.pageSize.value ? this.dataSource.length : this.pageSize.value;
+    this.itemsPerPage.emit({ pageSize: itemsOnPage, lineItemsInView: this.dataSource });
+  }
+
+  onPageChange(e: PageEvent) {
+    this.pageSize.next(e.pageSize);
+    this.pageNumber.next(e.pageIndex);
+    this.getLineItems(this.group.id);
+  }
+
+  onSortChange(e: Sort) {
+    this.sortColumn.next(e.active);
+    this.sortDirection.next(e.direction ? e.direction : SORT_DIRECTION.ASCENDING);
+    this.getLineItems(this.group.id);
+  }
+  // #endRegion
+
+  // #region Line Item Edit
+  openLineItemDialog(lineItem: LineItem, isEditable: boolean) {
+    this.other = '';
+    this.width = '60vw';
+    this.panelClass = 'no-padding-dialog';
+    this.label = 'actions.ok';
+    this.lineItem = lineItem;
+
+    if (lineItem.approvalStatusReason) {
+      const pos = lineItem.approvalStatusReason.indexOf(':');
+      if (pos > 0) {
+        this.other = lineItem.approvalStatusReason.substring(0, pos - 1).toLocaleLowerCase();
+      } else {
+        this.other = lineItem.approvalStatusReason.toLocaleLowerCase();
+      }
+    }
+
+    this.dialog.open(LineItemDialogComponent, {
+      width: this.width,
+      panelClass: this.panelClass,
+      data: {
+        header: {
+          title: this.selectedTab === LINE_ITEM_QUERY_PARAMS_SERVICE.TABS.DRAFTS.VALUE
+            ? this.translateService.instant('modals.lineItem.titleDraft') : this.translateService.instant('modals.lineItem.title')
+        },
+        content: {
+          lineItem,
+          isEditable,
+          selectedTab: this.selectedTab
+        },
+        footer: {
+          secondaryButtonLabel: this.translateService.instant(isEditable ? 'actions.cancel' : this.label),
+          primaryButtonVisible: isEditable,
+          primaryButtonLabel: this.translateService.instant('actions.save'),
+          primaryButtonValidation: this.submitLineItemEditValidation,
+          primaryButtonCallback: this.submitLineItemEdit
+        }
+      }
+    });
+  }
+
+  submitLineItemEditValidation = (payload) => {
+    return payload.form.valid;
+  }
+
+  submitLineItemEdit = (payload) => {
+    this.lineItem = { ...this.lineItem, ...payload.form.value };
+    this.lineItemService.updateLineEdit(payload.id, this.lineItem).subscribe(this.onLineItemEditSuccess, this.onLineItemEditFail);
+  }
+
+  onLineItemEditSuccess = (value) => {
+    this.error = value;
+    if (value && value.fieldErrors && value.fieldErrors.length) {
+      this.lineItemService.loadErrors(value.fieldErrors);
+      for (const x of value.fieldErrors) {
+        this.snackBar.open(
+          this.translateService.instant(`approvals.${x.fieldName}`),
+          this.translateService.instant('feedback.dismiss').toUpperCase(),
+          { duration: 8000 }
+        );
+      }
+    } else {
+      if (this.fileService.isAttachedFileRemoved) {
+        this.fileService.deleteSupportingDocument(this.lineItem.id, this.onLineItemEditSuccess, this.onLineItemEditFail);
+      } else if (this.fileService.fileAttached) {
+        this.fileService.upload(this.fileService.fileAttached.type, this.fileService.fileAttached.file, this.lineItem.id, this.onLineItemEditSuccess, this.onLineItemEditFail);
+      } else {
+        this.dialog.closeAll();
+        this.lineItemService.refresh();
+      }
+
+    }
+  }
+
+  onLineItemEditFail = (value) => {
+    this.error = value;
+    this.snackBar.open(
+      this.translateService.instant('approvals.lineItemEditFailed'),
+      this.translateService.instant('feedback.dismiss').toUpperCase(),
+      { duration: 6000 }
+    );
+  }
+  // #endregion
+  // #region Open Open Dialogs
+  openFlagDialog(lineItem: LineItem) {
+    this.dialog.open(FlagDialogComponent, {
+      width: '50vw',
+      panelClass: 'no-padding-dialog',
+      data: {
+        header: {
+          title: this.translateService.instant('modals.flags.title')
+        },
+        content: {
+          lineItem
+        },
+        footer: {
+          secondaryButtonVisible: false,
+          primaryButtonLabel: this.translateService.instant('actions.ok'),
+          primaryButtonCallback: this.viewedApprovalDetails
+        }
+      }
+    });
+  }
+
+  viewedApprovalDetails = () => {
+    this.dialog.closeAll();
+  }
+
+  setTooltip(lineItem: LineItem): string {
+    const toolTips: string[] = [];
+    if (lineItem.isRecycled) {
+      toolTips.push(this.recycledTooltip);
+    }
+    if (lineItem.potentialErrors && lineItem.potentialErrors.length) {
+      each(lodashmap(lineItem.potentialErrors, 'errorType'), (obj) =>
+        toolTips.push(this.translateService.instant(`potentialErrors.tooltip.${obj}`))
+      );
+    }
+    return toolTips.length > 3 ? toolTips.slice(0, 3).join('\n') : toolTips.join('\n');
+  }
+
+  // #endregion
+
+  getPageSizeOptions(): any[] {
+
+    const maxLength = this.length;
+
+    if (LINE_ITEM_TABLE_SERVICE.PAGE_MAX_SIZE_OPTIONS < this.length) {
+      return [
+        ...LINE_ITEM_TABLE_SERVICE.PAGE_SIZE_OPTIONS,
+        maxLength
+      ];
+    } else {
+      return LINE_ITEM_TABLE_SERVICE.PAGE_SIZE_OPTIONS;
+    }
+  }
+
+  downloadAttachment(id: string) {
+    this.fileService.downloadSupportingDocument(id);
+  }
+}

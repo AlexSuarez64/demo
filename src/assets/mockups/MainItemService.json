@@ -1,0 +1,28 @@
+{
+    "ItemID": "f46b3d40-ab0c-44df-9a04-a23512efd662",
+    "ItemName": "QuoteJourneyStep2",
+    "ItemPath": "/sitecore/content/Global Travel Portal/RACV/Home/Assets/Common/QuoteJourney/QuotejourneyStep2/QuoteJourneyStep2",
+    "ParentID": "8bf43c23-605f-497b-9792-a6dbf86d62bf",
+    "TemplateID": "bbc67a94-2415-4812-b823-ce53f029f6e2",
+    "TemplateName": "PolicyList",
+    "CloneSource": null,
+    "ItemLanguage": "en",
+    "ItemVersion": "1",
+    "DisplayName": "QuoteJourneyStep2",
+    "HasChildren": "False",
+    "ItemIcon": "/temp/iconcache/applications/32x32/document.png",
+    "ItemMedialUrl": "/-/icon/Applications/48x48/Document.png.aspx",
+    "ItemUrl": "~/link.aspx?_id=F46B3D40AB0C44DF9A04A23512EFD662&amp;_z=z",
+    "MultiTrip": "{multiTripTier}",
+    "InternationalTrip": "{tier1}|{tier2}|{tier3}",
+    "DomesticTrip":"{tier2}|{tier1}|{tier3}",
+    "DomesticTripBenefits": "{benifitKey1}|{benifitKey2}|{benifitKey1}|{benifitKey2}|{benifitKey1}|{benifitKey2}",
+    "InternationalTripBenefits": "{benifitKey1}|{benifitKey2}|{benifitKey1}|{benifitKey2}|{benifitKey1}|{benifitKey2}",
+    "MultiTripBenefits": "{benifitKey1}|{benifitKey2}|{benifitKey1}|{benifitKey2}|{benifitKey1}|{benifitKey2}",
+    "PolicyList": "{91C1B8A3-D512-4BBE-9EE6-6F5B25DBE3EB}|{100E1DB5-D157-475B-9218-8A861F9E3A7A}|{B358CC47-AD5B-49CE-A631-AC71527A0426}",
+
+    "SelectedExcessName":"$0",
+    "SelectedMaxLenName":"30 Days",
+    "SelectedSkiing":"False",
+    "SelectedCruise":"False"
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "ItemID": "7df7dad8-ac0f-4f67-9139-e3ed908d5d5a",
+        "ItemName": "LV",
+        "Key": "LV",
+        "Phrase": "2921–2999,0200–0299,2600–2618,0900–0999"
+    },
+    {
+        "ItemID": "473ece99-43b2-4c8e-ba19-0d69a3377fbd",
+        "ItemName": "NS",
+        "Key": "NS",
+        "Phrase": "1000–2599,2619–2898"
+    },
+    {
+        "ItemID": "769b46f4-870a-460d-b433-155f14df37fc",
+        "ItemName": "NT",
+        "Key": "NT",
+        "Phrase": "7800–7999,0800–0899"
+    },
+    {
+        "ItemID": "95379bdd-f743-44f7-a2e9-9e4170337697",
+        "ItemName": "QL",
+        "Key": "QL",
+        "Phrase": "4000–4999,8000–8999"
+    },
+    {
+        "ItemID": "aa9833fe-a1b7-4f9e-b8f6-05cfd8f219ac",
+        "ItemName": "SA",
+        "Key": "SA",
+        "Phrase": "9000–9999,5000–5799"
+    },
+    {
+        "ItemID": "0558a7b7-0f66-4b09-aa67-04d4e08be2c6",
+        "ItemName": "TA",
+        "Key": "TA",
+        "Phrase": "6800–6999,7000–7799"
+    },
+    {
+        "ItemID": "37534610-7d8c-4a00-a0db-82caca375b9c",
+        "ItemName": "VI",
+        "Key": "VI",
+        "Phrase": "2900–2920,3000–3999"
+    },
+    {
+        "ItemID": "b58c6851-9c2b-413f-9e2f-df9896619579",
+        "ItemName": "WA",
+        "Key": "WA",
+        "Phrase": "5800–5999,6000–6797"
+    }
+]

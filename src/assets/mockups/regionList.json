@@ -1,0 +1,24 @@
+[
+    {
+        "ItemID": "7d62287a-939e-4197-89c9-7ff305f8e7a2",
+        "ItemName": "Asia"
+    },
+    {
+        "ItemID": "7e531367-554e-48da-a6f0-788aec193a72",
+        "ItemName": "Americas"
+    },
+    {
+        "ItemID": "02ac85c0-2b94-4ced-b6de-63bd065ceef2",
+        "ItemName": "Europe"
+    },
+    {
+        "ItemID": "4ad8f669-bd05-4b2f-b1c2-1fc1abf40ae7",
+        "ItemName": "Pecific"
+    },
+    {
+        "ItemID": "9eab110c-edb8-4b7b-aeb7-9fc50317fd82",
+        "ItemName": "Africa"
+    }
+]
+
+

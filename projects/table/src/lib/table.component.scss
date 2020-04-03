@@ -1,0 +1,23 @@
+.full-width-table {
+    width: 100%;
+    justify-content: center !important;
+    align-content: center !important;
+  }
+  
+  table .mat-header-cell {
+    flex-direction: column;
+    justify-content: center;
+    color: red;
+  }
+  
+  table .mat-cell {
+    text-align: center;
+    justify-content:center;
+  }
+  
+  .table-width {
+    justify-content: center !important;
+    align-content: center !important;
+    margin-left: 4% !important;
+  }
+  

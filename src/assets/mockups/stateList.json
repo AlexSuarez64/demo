@@ -1,0 +1,41 @@
+[{
+    "ItemID": "272a53f0-754f-46ee-9f87-cfd78261ca6e",
+    "ItemName": "NS",
+    "Key": "NS",    
+    "Phrase": "NS"
+}, {
+    "ItemID": "779cbc54-991b-47f9-b368-519c93b8546d",
+    "ItemName": "QL",
+    "Key": "QL",
+    "Phrase": "QL"
+}, {
+    "ItemID": "0c12b319-bc45-4d77-bbeb-cb662a80a022",
+    "ItemName": "SA",
+    "Key": "SA",
+    "Phrase": "SA"
+}, {
+    "ItemID": "14a33e01-ee4e-4f9e-8ddf-e1f60bbc684e",
+    "ItemName": "TA",
+    "Key": "TA",
+    "Phrase": "TA"
+}, {
+    "ItemID": "83187d4c-1942-46f2-9856-47351589632f",
+    "ItemName": "VI",
+    "Key": "VI",
+    "Phrase": "VI"    
+}, {
+    "ItemID": "c527909f-3b19-4385-b4f6-89ddeaaed1c0",
+    "ItemName": "WA",
+    "Key": "WA",
+    "Phrase": "WA"    
+}, {
+    "ItemID": "7c29babf-7500-4903-8989-b62d014ac045",
+    "ItemName": "AC",
+    "Key": "AC",
+    "Phrase": "AC"   
+}, {
+    "ItemID": "932ed045-8db0-431e-9a56-2fdc1bb3747c",
+    "ItemName": "NT",
+    "Key": "NT",
+    "Phrase": "NT"
+}]

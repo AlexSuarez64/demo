@@ -1,0 +1,469 @@
+{
+    "sitecore_services": [{
+            "name": "RACV",
+            "item_services": [{
+                    "Name": "GenericSettings",
+                    "ItemID": "D650B230-6513-402F-97D4-660950A8FA6E"
+                },
+                {
+                    "Name": "WhiteLebelingSettings",
+                    "ItemID": "9D8D6F9D-3A63-49B6-AF3B-B728E3B2A5EC"
+                },
+
+                {
+                    "Name": "StepThreeAPICall",
+                    "ItemID": "BC83E4A4-FC08-492A-8E67-4D4AA3C6E2DF"
+                },
+                {
+                    "Name": "StepTwoAPICall",
+                    "ItemID": "8BF43C23-605F-497B-9792-A6DBF86D62BF"
+                },
+                {
+                    "Name": "StepsLebeling",
+                    "ItemID": "821DFB2E-E86E-4007-8736-64DE1DDF7B7F"
+                },
+                {
+                    "Name": "PromoLebeling",
+                    "ItemID": "B56950CA-627D-496A-97F7-74D54092EA81"
+                },
+                {
+                    "Name": "TripTypeLebeling",
+                    "ItemID": "E92F9176-97DB-4E6F-AB58-DC7FF69C10E5"
+                },
+                {
+                    "Name": "ValidationLebeling",
+                    "ItemID": "5EF4C9C3-1557-4111-829A-6354F84C6820"
+                },
+                {
+                    "Name": "ThemeColor",
+                    "ItemID": "4C37F572-1E1A-4E95-BF40-8D05B74B027F"
+                },
+                {
+                    "Name": "SummarySettings",
+                    "ItemID": "CA4C72C8-67D7-4326-BFB1-5880C9741C6E"
+                },
+
+                {
+                    "Name": "CoverageDefaultSettings",
+                    "ItemID": "F7A8364F-2E5E-441D-B65D-FADFCD1D3479"
+                },
+
+
+                {
+                    "Name": "RegionsWiseCountryList",
+                    "ItemID": "BF9263DC-EE03-4792-8D01-8D2EEC16C953"
+                },
+                {
+                    "Name": "StateList",
+                    "ItemID": "A63B14D4-CAFC-44B6-86C4-5D6587E08FB2"
+                },
+                {
+                    "Name": "PostCode",
+                    "ItemID": "D11F6E15-3642-4C94-BC52-7AE1B1A8FC2D"
+                },
+                {
+                    "Name": "PaymentReceipt",
+                    "ItemID": "857A248C-F529-4BE4-8492-882B2A8546E6"
+                },
+                {
+                    "Name": "travel-alerts",
+                    "ItemID": "03CD5331-1AF0-42C0-A2CD-60B19B7A76A7"
+                },
+                {
+                    "Name": "QuoteJourneyStep2",
+                    "ItemID": "f46b3d40-ab0c-44df-9a04-a23512efd662"
+                },
+                {
+                    "Name": "ShowallbenifitsTxt",
+                    "ItemID": "7995d9e4-0810-4f3e-a8d8-e254c7ab3963"
+                }
+            ]
+        },
+        {
+            "name": "W2C",
+            "item_services": [{
+                    "Name": "GenericSettings",
+                    "ItemID": "CDA8BFD6-8642-4D6F-AF22-B04F37EC0FA2"
+                },
+                {
+                    "Name": "WhiteLebelingSettings",
+                    "ItemID": "15CC0659-6FA0-4BF0-934E-935387498BF5"
+                },
+
+                {
+                    "Name": "StepTwoAPICall",
+                    "ItemID": "22D70EFB-342E-4026-AB4F-F66593F16E3A"
+                },
+                {
+                    "Name": "StepThreeAPICall",
+                    "ItemID": "06740206-42C7-4D05-8EB3-80733B5CE721"
+                },
+                {
+                    "Name": "StepsLebeling",
+                    "ItemID": "85C4755F-756C-42F3-84F0-F41415297597"
+                },
+                {
+                    "Name": "PromoLebeling",
+                    "ItemID": "98601DDC-8B42-496D-916A-2F2089D4B00C"
+                },
+                {
+                    "Name": "TripTypeLebeling",
+                    "ItemID": "5092CC0A-EB8D-409B-A856-C73694345538"
+                },
+                {
+                    "Name": "ValidationLebeling",
+                    "ItemID": "93148015-4B08-4B47-AD98-457ED2702E32"
+                },
+                {
+                    "Name": "ThemeColor",
+                    "ItemID": "27EC6D39-CEDF-4827-924C-33FDC3BEB5CE"
+                },
+                {
+                    "Name": "SummarySettings",
+                    "ItemID": "33589028-DFA6-4C4D-981B-CAA0A5FF5C07"
+                },
+
+                {
+                    "Name": "CoverageDefaultSettings",
+                    "ItemID": "5B1B1B19-AF05-4554-84E2-47D57CF202BF"
+                },
+
+
+                {
+                    "Name": "RegionsWiseCountryList",
+                    "ItemID": "BF9263DC-EE03-4792-8D01-8D2EEC16C953"
+                },
+                {
+                    "Name": "StateList",
+                    "ItemID": "A63B14D4-CAFC-44B6-86C4-5D6587E08FB2"
+                },
+                {
+                    "Name": "PostCode",
+                    "ItemID": "D11F6E15-3642-4C94-BC52-7AE1B1A8FC2D"
+                },
+                {
+                    "Name": "PaymentReceipt",
+                    "ItemID": "48EBB242-C6D3-47B9-AE2C-C5C404370A3D"
+                },
+                {
+                    "Name": "travel-alerts",
+                    "ItemID": "03CD5331-1AF0-42C0-A2CD-60B19B7A76A7"
+                },
+                {
+                    "Name": "QuoteJourneyStep2",
+                    "ItemID": "2dfe16aa-a884-4ab1-9ca9-6bfb1337b620"
+                },
+                {
+                    "Name": "ShowallbenifitsTxt",
+                    "ItemID": "b1d1d71a-379e-42b4-9137-6f4adcefe118"
+                }
+            ]
+        },
+        {
+            "name": "RAC",
+            "item_services": [{
+                    "Name": "GenericSettings",
+                    "ItemID": "6419BC67-2C71-4295-95BF-36E01545C0C2"
+                },
+                {
+                    "Name": "WhiteLebelingSettings",
+                    "ItemID": "C8EEA5EF-263F-444D-8AFD-BE11D75DF7B2"
+                },
+                {
+                    "Name": "StepThreeAPICall",
+                    "ItemID": "036B6EE1-215D-41E4-81DE-626CA0B4B5C1"
+                },
+                {
+                    "Name": "StepTwoAPICall",
+                    "ItemID": "9D84455A-635C-44FA-B14B-ADBEA244BD6D"
+                },
+                {
+                    "Name": "StepsLebeling",
+                    "ItemID": "58A6F517-F154-46C2-BD9C-DA443D4D3C5D"
+                },
+                {
+                    "Name": "PromoLebeling",
+                    "ItemID": "A0392998-6D80-40B7-B050-E71207D958F1"
+                },
+                {
+                    "Name": "TripTypeLebeling",
+                    "ItemID": "959427B8-A3F4-4D9F-8A4F-518AA8EEB72B"
+                },
+                {
+                    "Name": "ValidationLebeling",
+                    "ItemID": "41860CB9-E7B8-4B1F-BAA1-F13269623CAA"
+                },
+                {
+                    "Name": "ThemeColor",
+                    "ItemID": "093AB42E-4E82-4550-BD91-A6414F1DCB60"
+                },
+                {
+                    "Name": "SummarySettings",
+                    "ItemID": "1BE0C438-0030-4340-9FAB-95E2ABDB587E"
+                },
+
+                {
+                    "Name": "RegionsWiseCountryList",
+                    "ItemID": "BF9263DC-EE03-4792-8D01-8D2EEC16C953"
+                },
+                {
+                    "Name": "StateList",
+                    "ItemID": "A63B14D4-CAFC-44B6-86C4-5D6587E08FB2"
+                },
+                {
+                    "Name": "PostCode",
+                    "ItemID": "D11F6E15-3642-4C94-BC52-7AE1B1A8FC2D"
+                },
+                {
+                    "Name": "PaymentReceipt",
+                    "ItemID": "6234FE99-22B9-4369-A0CA-D035FE0C7E6F"
+                },
+                {
+                    "Name": "travel-alerts",
+                    "ItemID": "03CD5331-1AF0-42C0-A2CD-60B19B7A76A7"
+                },
+                {
+                    "Name": "QuoteJourneyStep2",
+                    "ItemID": "c32d8a72-9f22-4c1e-b9f3-d729039c8aca"
+                },
+                {
+                    "Name": "ShowallbenifitsTxt",
+                    "ItemID": "ba2982b4-9541-4351-893f-18985c9e83a3"
+                }
+            ]
+        },
+        {
+            "name": "RAA",
+            "item_services": [{
+                    "Name": "GenericSettings",
+                    "ItemID": "73325943-26D2-4DF4-AF94-F2F063AAB02B"
+                },
+                {
+                    "Name": "WhiteLebelingSettings",
+                    "ItemID": "498E709C-4424-45FF-87F1-D8E1FE2EF3D2"
+                },
+                {
+                    "Name": "StepsLebeling",
+                    "ItemID": "8F73889E-A104-4266-B940-FA44C6981F04"
+                },
+                {
+                    "Name": "PromoLebeling",
+                    "ItemID": "C5106EC4-0912-4CB8-BCFF-F7D7D978D758"
+                },
+                {
+                    "Name": "TripTypeLebeling",
+                    "ItemID": "C700CC01-D264-47EF-A7FC-EE7F0B94EB67"
+                },
+                {
+                    "Name": "ValidationLebeling",
+                    "ItemID": "587020B5-272A-427C-83B4-60A741DEC577"
+                },
+                {
+                    "Name": "ThemeColor",
+                    "ItemID": "2FDE6886-0EA1-41D9-AEC0-A4FF007E8DFD"
+                },
+                {
+                    "Name": "SummarySettings",
+                    "ItemID": "498F6971-E43D-4928-B0D4-FAB7C589B58E"
+                },
+                {
+                    "Name": "StepTwoAPICall",
+                    "ItemID": "72BD121C-FA53-4798-AA9E-8292AEF5E44F"
+                },
+                {
+                    "Name": "StepThreeAPICall",
+                    "ItemID": "3B44EE54-2727-4758-AE65-D654C33D0AEE"
+                },
+                {
+                    "Name": "RegionsWiseCountryList",
+                    "ItemID": "BF9263DC-EE03-4792-8D01-8D2EEC16C953"
+                },
+                {
+                    "Name": "StateList",
+                    "ItemID": "A63B14D4-CAFC-44B6-86C4-5D6587E08FB2"
+                },
+                {
+                    "Name": "PostCode",
+                    "ItemID": "D11F6E15-3642-4C94-BC52-7AE1B1A8FC2D"
+                },
+                {
+                    "Name": "PaymentReceipt",
+                    "ItemID": "3ABB8BAF-D3CF-4190-AF68-E6B303099632"
+                },
+                {
+                    "Name": "travel-alerts",
+                    "ItemID": "03CD5331-1AF0-42C0-A2CD-60B19B7A76A7"
+                },
+                {
+                    "Name": "QuoteJourneyStep2",
+                    "ItemID": "c6cf5aa0-cbf9-4116-8e86-3cbdfa23ab36"
+                },
+                {
+                    "Name": "ShowallbenifitsTxt",
+                    "ItemID": "e1b3c37d-1888-4ae1-98f7-143172bf24df"
+                }
+            ]
+        },
+        {
+            "name": "RACQ",
+            "item_services": [{
+                    "Name": "GenericSettings",
+                    "ItemID": "68947388-3D82-4DC9-8BB7-6E765FE6B91B"
+                },
+                {
+                    "Name": "WhiteLebelingSettings",
+                    "ItemID": "08190F47-FEB1-4A72-8065-CF659A3BBAEB"
+                },
+                {
+                    "Name": "StepsLebeling",
+                    "ItemID": "A422C367-654F-42F3-992A-9F0710263582"
+                },
+                {
+                    "Name": "PromoLebeling",
+                    "ItemID": "BF2D7EA1-B318-4D7B-9EF7-B11EFB3089AF"
+                },
+                {
+                    "Name": "TripTypeLebeling",
+                    "ItemID": "1EFB9568-C1A2-4FCB-ABFB-64BC652A0799"
+                },
+                {
+                    "Name": "ValidationLebeling",
+                    "ItemID": "B13B2C30-959D-4A67-BBEB-0C167F5FF21D"
+                },
+                {
+                    "Name": "ThemeColor",
+                    "ItemID": "C978A4FD-9A63-4205-8BFB-357883804234"
+                },
+                {
+                    "Name": "SummarySettings",
+                    "ItemID": "0BF8E10B-4A3D-4ED5-9696-A4F21C44C4B5"
+                },
+                {
+                    "Name": "StepThreeAPICall",
+                    "ItemID": "3D1A4E30-C0BC-4C3E-88AE-20164C4F14C5"
+                },
+                {
+                    "Name": "StepTwoAPICall",
+                    "ItemID": "4E33B7E5-8902-4AB8-BA60-79988081DAD3"
+                },
+                {
+                    "Name": "RegionsWiseCountryList",
+                    "ItemID": "BF9263DC-EE03-4792-8D01-8D2EEC16C953"
+                },
+                {
+                    "Name": "StateList",
+                    "ItemID": "A63B14D4-CAFC-44B6-86C4-5D6587E08FB2"
+                },
+                {
+                    "Name": "PostCode",
+                    "ItemID": "D11F6E15-3642-4C94-BC52-7AE1B1A8FC2D"
+                },
+                {
+                    "Name": "PaymentReceipt",
+                    "ItemID": "BFEA98A3-70F5-438E-888E-5A3592CA8071"
+                },
+                {
+                    "Name": "travel-alerts",
+                    "ItemID": "03CD5331-1AF0-42C0-A2CD-60B19B7A76A7"
+                },
+                {
+                    "Name": "QuoteJourneyStep2",
+                    "ItemID": "69b0eaa5-484f-4bfb-8b43-f9771425284a"
+                },
+                {
+                    "Name": "ShowallbenifitsTxt",
+                    "ItemID": "d247af89-8c1b-4171-a25d-73a5e1fe71f1"
+                }
+            ]
+        },
+        {
+            "name": "AANT",
+            "item_services": [{
+                    "Name": "GenericSettings",
+                    "ItemID": "61E706D4-94F2-4F50-9768-E9D17EA7BBD7"
+                },
+                {
+                    "Name": "WhiteLebelingSettings",
+                    "ItemID": "D455041C-551C-4A08-8ABA-725E0EC34C63"
+                },
+                {
+                    "Name": "StepsLebeling",
+                    "ItemID": "697CCAA5-A2BB-4B0F-8980-9D272990E650"
+                },
+                {
+                    "Name": "PromoLebeling",
+                    "ItemID": "1E8A5FD9-9A5C-447F-AFD9-B004F539864C"
+                },
+                {
+                    "Name": "TripTypeLebeling",
+                    "ItemID": "9A690360-4B58-4C34-B592-C50C8BA54E53"
+                },
+                {
+                    "Name": "ValidationLebeling",
+                    "ItemID": "3295D114-19BB-420C-802E-BCC6A652A9AF"
+                },
+                {
+                    "Name": "ThemeColor",
+                    "ItemID": "98C72698-D9D6-46ED-BEBC-0FE8F8F026A5"
+                },
+                {
+                    "Name": "SummarySettings",
+                    "ItemID": "95819F10-2BF8-4426-95D1-2AAC706BC013"
+                },
+                {
+                    "Name": "StepTwoAPICall",
+                    "ItemID": "319ACFDD-CB52-4ED0-9126-4D3145E89D98"
+                },
+
+                {
+                    "Name": "StepThreeAPICall",
+                    "ItemID": "264A0FC7-9AD5-4D96-BE15-D6C49F1C4038"
+                },
+                {
+                    "Name": "RegionsWiseCountryList",
+                    "ItemID": "BF9263DC-EE03-4792-8D01-8D2EEC16C953"
+                },
+                {
+                    "Name": "StateList",
+                    "ItemID": "A63B14D4-CAFC-44B6-86C4-5D6587E08FB2"
+                },
+                {
+                    "Name": "PostCode",
+                    "ItemID": "D11F6E15-3642-4C94-BC52-7AE1B1A8FC2D"
+                },
+                {
+                    "Name": "PaymentReceipt",
+                    "ItemID": "D9E70DA9-8E9D-4664-A280-F82712F39BB4"
+                },
+                {
+                    "Name": "travel-alerts",
+                    "ItemID": "03CD5331-1AF0-42C0-A2CD-60B19B7A76A7"
+                },
+                {
+                    "Name": "QuoteJourneyStep2",
+                    "ItemID": "d86f7f37-1d0d-458a-af0c-054e152253bf"
+                },
+                {
+                    "Name": "ShowallbenifitsTxt",
+                    "ItemID": "07e0ce59-1232-4940-93d4-f5b5b693280b"
+                }
+            ]
+        }
+    ],
+    "logging_settings": [{
+            "loggerName": "console",
+            "loggerLocation": "",
+            "isActive": true
+        },
+        {
+            "loggerName": "localstorage",
+            "loggerLocation": "logging",
+            "isActive": false
+        },
+        {
+            "loggerName": "webapi",
+            "loggerLocation": "/api/log",
+            "isActive": false
+        }
+    ]
+}
