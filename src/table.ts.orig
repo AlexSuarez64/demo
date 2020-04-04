@@ -123,7 +123,7 @@ export class LineItemTableComponent implements OnInit {
       // TODO - update default columns to remove ngIf in HTML
       this.defaultColumns = [];
       this.lineItemService.formFields.forEach(c => {
-        this.lineItemService.displayColumns.forEach(dc => {
+        this.lineItemService.allColumns.forEach(dc => {
           if (c.id === dc.name) {
             this.defaultColumns.push(dc.name);
           }

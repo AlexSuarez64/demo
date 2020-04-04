@@ -11,7 +11,7 @@ import { MatTable, MatTableDataSource } from '@angular/material/table';
 export class TableComponent implements OnInit, AfterViewInit {
 
   @Input() selectedColumns: any[];
-  @Input() displayColumns: any[];
+  @Input() allColumns: any[];
   @Input() data: any[];
   @Input() model: string;
   @ViewChild(MatPaginator) paginator: MatPaginator;
