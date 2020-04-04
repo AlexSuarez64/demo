@@ -28,7 +28,7 @@ export class SelectionComponent implements OnInit, OnDestroy {
   modelId = '';
   columns: any[];
   data: any[];
-  allColumns: any[];
+  allColumnNames: any[];
   selectedColumns: any[];
   dataSub: Subscription;
   modelSub: Subscription;
@@ -69,7 +69,7 @@ export class SelectionComponent implements OnInit, OnDestroy {
           }
         }
 
-        this.allColumns = this.selectedColumns.map(c => c.name);
+        this.allColumnNames = this.selectedColumns.map(c => c.name);
         // tslint:disable-next-line: no-unused-expression
         this.selectedColumns = this.selectedColumns
           .map(({ ItemID, ItemName, ItemPath, ParentID, TemplateID, TemplateName, CloneSource, ItemLanguage,

@@ -75,8 +75,8 @@
             </ng-template>
         </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="allColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: allColumns;"></tr>
+        <tr mat-header-row *matHeaderRowDef="allColumnNames"></tr>
+        <tr mat-row *matRowDef="let row; columns: allColumnNames;"></tr>
     </table>
 
     <mat-paginator #paginator [length]="dataSource?.data.length" [pageIndex]="0" [pageSize]="5"
