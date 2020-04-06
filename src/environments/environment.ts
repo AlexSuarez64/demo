@@ -19,4 +19,9 @@ export const environment = {
   SitecoreBaseAddress: 'https://racvdev.tmmatravel.com/GTPItemService/GetItemData?itemId=',
   Sitecore_Content_Response_Models: 'sitecore/Response-Models/',
   Sitecore_Children: '/children/?includeStandardTemplateFields=false&fields=ItemId,ItemName',
+  // model ids
+  modelIds: [
+    { name: 'Quotes', id: '53BA044D-8F58-4BB4-9431-F81F128D5672' },
+    { name: 'Quotes2', id: '3F3DED79-7CF2-43E0-9A13-8D5F32300D2B' },
+  ]
 };
