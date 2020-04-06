@@ -1,5 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.heading {
+    margin-left: 4%;
+}
+
+.table-width {
+    justify-content: center !important;
+    align-content: center !important;
+    margin-left: 1%
+}
+
+.full-width-table {
+    justify-content: center !important;
+    align-content: center !important;
+}
+
+table .mat-header-cell {
+    flex-direction: column;
+    justify-content: center;
+    color: red;
+}
+
+table .mat-cell {
+    text-align: center;
+    justify-content: center;
+}

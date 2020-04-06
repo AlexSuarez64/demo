@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { FlexModule } from '@angular/flex-layout';
 
 import { TableComponent } from './table.component';
 
@@ -12,6 +13,7 @@ import { TableComponent } from './table.component';
   declarations: [TableComponent],
   imports: [
     CommonModule,
+    FlexModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,

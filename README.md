@@ -21,7 +21,8 @@ The Sitecore list of columns should be all columns that can be potentially displ
 
 ### selectedColumns
 
-"selectedColumns" are the that will be displayed in the table view. The selectedColumns must have properties of: name, label, type.
+"selectedColumns" are the that will be displayed in the table view. The selectedColumns must have properties of: name, label, type. 
+Valid types: boolean, currency, date, decimal, number, & percent.
 The selectedColumns are all the columns that are marked as selected in the Sitecore list.
 
 ## Pre-Build Steps
