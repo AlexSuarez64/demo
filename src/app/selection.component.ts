@@ -13,10 +13,7 @@ import { MatButton } from '@angular/material/button';
 })
 export class SelectionComponent implements OnInit, OnDestroy {
   title = 'tm-test';
-  selections = [
-    { label: 'Quotes', value: 'Quotes' },
-    { label: 'Quotes2', value: 'Quotes2' },
-  ];
+  selections = environment.modelIds;
   base = environment.SitecoreBaseAddress;
   path = environment.Sitecore_Content_Response_Models;
   children = environment.Sitecore_Children;

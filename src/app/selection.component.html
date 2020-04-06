@@ -3,8 +3,8 @@
   <mat-form-field>
       <mat-label>Models</mat-label>
       <mat-select>
-          <mat-option *ngFor="let model of selections" [value]="model.value" (onSelectionChange)="loadModel($event)">
-              {{model.label}}
+          <mat-option *ngFor="let model of selections" [value]="model.name" (onSelectionChange)="loadModel($event)">
+              {{model.name}}
           </mat-option>
       </mat-select>
   </mat-form-field>
