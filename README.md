@@ -17,20 +17,20 @@ Table has 3 variable that need to be passed in.
 ### allColumnNames
 
 "allColumnNames" these are just the names that are defined in Sitecore list. 
-The Sitecore list of columns should be all columns that can be potentially displayed from the API response object.
+The Sitecore list of columns should be all columns that can potentially be displayed from the API response object.
 
 ### selectedColumns
 
-"selectedColumns" are the that will be displayed in the table view. The selectedColumns must have properties of: name, label, type. 
-Valid types: boolean, currency, date, decimal, number, & percent.
+"selectedColumns" are the columns that will be displayed in the table view. The selectedColumns must have properties of: name, label, type. 
+Valid types are: boolean, currency, date, decimal, number, & percent.
 The selectedColumns are all the columns that are marked as selected in the Sitecore list.
 
 ## Pre-Build Steps
 
-1) You must remove the library build files (header, table) from the from the package.json in the root and then run "npm i -f".
+1) You must remove the library build files (header, table) from the package.json in the root and then run "npm i -f".
     (Save this in the clip board it is needed in step 3)
 2) Run "npm run all". This step will build the libraries that are needed to build the base application.
-3) Restore the libaries saved in the clip board to the package.json file in the root and then delete file package-lock.json then run "npm i -f"
+3) Restore the libaries saved in the clip board to the package.json file in the root and then run "npm i -f"
 4) The application should be built. You can now run "npm start" or "npm run build".
 
 ## Development server
@@ -40,14 +40,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
