@@ -12,7 +12,7 @@ import { MatButton } from '@angular/material/button';
   styleUrls: ['./selection.component.scss']
 })
 export class SelectionComponent implements OnInit, OnDestroy {
-  title = 'tm-test';
+  title = 'Dynamic Model View';
   selections = environment.modelIds;
   base = environment.SitecoreBaseAddress;
   path = environment.Sitecore_Content_Response_Models;
