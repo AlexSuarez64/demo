@@ -30,10 +30,7 @@ export class SelectionComponent implements OnInit, OnDestroy {
   private destroy$ = new Subject();
   dataSource: MatTableDataSource<any[]>;
 
-  constructor(
-    private modelService: ModelService,
-    private tableService: TableService,
-  ) { }
+  constructor(private modelService: ModelService, private tableService: TableService) {}
 
   ngOnInit() {
     this.showSelection = true;
@@ -48,7 +45,8 @@ export class SelectionComponent implements OnInit, OnDestroy {
     this.model = selectedModel.source.viewValue;
     const i = environment.modelIds.filter(m => m.name === this.model);
     this.modelId = i[0].id;
-    this.modelIdSub = this.modelService.getModel(this.modelId, this.base, this.children)
+    this.modelIdSub = this.modelService
+      .getModel(this.modelId, this.base, this.children)
       .pipe(takeUntil(this.destroy$))
       .subscribe(model => {
         this.columns = model;
@@ -62,12 +60,30 @@ export class SelectionComponent implements OnInit, OnDestroy {
 
         this.allColumnNames = this.selectedColumns.map(c => c.name);
         // tslint:disable-next-line: no-unused-expression
-        this.selectedColumns = this.selectedColumns
-          .map(({ ItemID, ItemName, ItemPath, ParentID, TemplateID, TemplateName, CloneSource, ItemLanguage,
-            ItemVersion, DisplayName, HasChildren, ItemIcon, ItemMedialUrl, ItemUrl, selected, id, ...c
-          }) => c);
+        this.selectedColumns = this.selectedColumns.map(
+          ({
+            ItemID,
+            ItemName,
+            ItemPath,
+            ParentID,
+            TemplateID,
+            TemplateName,
+            CloneSource,
+            ItemLanguage,
+            ItemVersion,
+            DisplayName,
+            HasChildren,
+            ItemIcon,
+            ItemMedialUrl,
+            ItemUrl,
+            selected,
+            id,
+            ...c
+          }) => c
+        );
 
-        this.dataSub = this.tableService.getData(this.model, this.base, this.path)
+        this.dataSub = this.tableService
+          .getData(this.model, this.base, this.path)
           .pipe(takeUntil(this.destroy$))
           .subscribe(data => {
             this.data = data as any[];

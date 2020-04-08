@@ -1,52 +1,45 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "./node_modules/@angular-devkit/core/src/workspace/workspace-schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tm-test": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+    "dmv": {
       "root": "",
       "sourceRoot": "src",
+      "projectType": "application",
       "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tm-test",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
+            "polyfills": "src/polyfills.ts",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/manifest.webmanifest"
+              "src/apple-touch-icon.png",
+              "src/robots.txt",
+              "src/manifest.json",
+              "src/assets"
             ],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "src/styles.scss"
-            ],
+            "styles": ["src/main.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -55,117 +48,83 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
                 }
               ],
               "serviceWorker": true,
-              "ngswConfigPath": "ngsw-config.json"
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "ci": {
+              "progress": false
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tm-test:build"
+            "hmr": true,
+            "hmrWarning": false,
+            "browserTarget": "dmv:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tm-test:build:production"
+              "hmr": false,
+              "browserTarget": "dmv:build:production"
+            },
+            "ci": {
+              "progress": false
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tm-test:build"
+            "browserTarget": "dmv:build"
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-builders/jest:run",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "src/manifest.webmanifest"
-            ],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "watch": true
+          },
+          "configurations": {
+            "ci": {
+              "watch": false,
+              "ci": true,
+              "coverage": true,
+              "silent": true
+            }
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tm-test:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "tm-test:serve:production"
-            }
+            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     },
-    "quotes": {
-      "projectType": "library",
-      "root": "projects/quotes",
-      "sourceRoot": "projects/quotes/src",
-      "prefix": "lib",
+    "dmv-e2e": {
+      "root": "e2e",
+      "projectType": "application",
       "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "tsConfig": "projects/quotes/tsconfig.lib.json",
-            "project": "projects/quotes/ng-package.json",
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/quotes/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/quotes/src/test.ts",
-            "tsConfig": "projects/quotes/tsconfig.spec.json",
-            "karmaConfig": "projects/quotes/karma.conf.js"
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "dmv:serve"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/quotes/tsconfig.lib.json",
-              "projects/quotes/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -199,13 +158,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/header/tsconfig.lib.json",
-              "projects/header/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["projects/header/tsconfig.lib.json", "projects/header/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -220,7 +174,7 @@
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
             "tsConfig": "projects/table/tsconfig.lib.json",
-            "project": "projects/table/ng-package.json",
+            "project": "projects/table/ng-package.json"
           },
           "configurations": {
             "production": {
@@ -239,17 +193,12 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/table/tsconfig.lib.json",
-              "projects/table/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["projects/table/tsconfig.lib.json", "projects/table/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     }
   },
-  "defaultProject": "tm-test"
+  "defaultProject": "dmv"
 }

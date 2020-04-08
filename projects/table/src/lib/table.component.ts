@@ -9,7 +9,6 @@ import { MatTable, MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit, AfterViewInit {
-
   @Input() selectedColumns: any[];
   @Input() allColumnNames: any[];
   @Input() data: any[];
@@ -19,8 +18,7 @@ export class TableComponent implements OnInit, AfterViewInit {
   @ViewChild(MatTable) table: MatTable<any[]>;
   dataSource: MatTableDataSource<any[]>;
 
-  constructor(
-  ) { }
+  constructor() {}
 
   ngOnInit() {
     this.dataSource = new MatTableDataSource<any[]>(this.data);
@@ -35,7 +33,9 @@ export class TableComponent implements OnInit, AfterViewInit {
   applyFilter(value: string) {
     this.dataSource.filter = value;
     this.dataSource.filterPredicate = (data, filter) => {
-      return JSON.stringify(Object.values(data)).toLowerCase().includes(filter.toLowerCase());
+      return JSON.stringify(Object.values(data))
+        .toLowerCase()
+        .includes(filter.toLowerCase());
     };
   }
 }

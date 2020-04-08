@@ -1,0 +1,23 @@
+<div *ngIf="showSelection" style="margin-left: 5%">
+  <mat-form-field>
+    <mat-label>Select Model</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let model of selections" [value]="model.name" (onSelectionChange)="loadModel($event)">
+        {{ model.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div *ngIf="!showSelection" style="margin-left: 2%;" class="mat-elevation-z8 table-width">
+  <div style="vertical-align: middle;">
+    <span style="color: blue; margin-left: 3%; font-size: medium;">
+      <strong>Model: {{ model }}</strong>
+    </span>
+    <button mat-flat-button *ngIf="!showSelection" color="primary" style="float: right" (click)="showSelection = true">
+      Back
+    </button>
+  </div>
+  <br />
+  <lib-table [data]="data" [allColumnNames]="allColumnNames" [selectedColumns]="selectedColumns" [model]="model">
+  </lib-table>
+</div>

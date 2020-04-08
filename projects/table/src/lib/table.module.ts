@@ -19,11 +19,10 @@ import { TableComponent } from './table.component';
     ReactiveFormsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule,
+    MatSortModule
   ],
-  providers: [
-  ],
+  providers: [],
   exports: [TableComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class TableModule { }
+export class TableModule {}

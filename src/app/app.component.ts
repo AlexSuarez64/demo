@@ -1,22 +1,65 @@
-import { Component } from '@angular/core';
-import { environment } from '../environments/environment';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
+import { TranslateService } from '@ngx-translate/core';
+import { merge } from 'rxjs';
+import { filter, map, switchMap } from 'rxjs/operators';
+
+import { environment } from '@env/environment';
+import { Logger, I18nService, untilDestroyed } from '@app/core';
+
+const log = new Logger('App');
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'tm-test';
-  selections = [
-    { label: 'Quotes', value: 'Quotes'},
-    { label: 'Quotes2', value: 'Quotes2'},
-  ];
-  base = environment.SitecoreBaseAddress;
-  path = environment.Sitecore_Content_Response_Models;
-  children = environment.Sitecore_Children;
-  models = [
-    { name: 'Quotes', id: '53BA044D-8F58-4BB4-9431-F81F128D5672' },
-    { name: 'Quotes2', id: '3F3DED79-7CF2-43E0-9A13-8D5F32300D2B' },
-  ];
+export class AppComponent implements OnInit, OnDestroy {
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private titleService: Title,
+    private translateService: TranslateService,
+    private i18nService: I18nService
+  ) {}
+
+  ngOnInit() {
+    // Setup logger
+    if (environment.production) {
+      Logger.enableProductionMode();
+    }
+
+    log.debug('init');
+
+    // Setup translations
+    this.i18nService.init(environment.defaultLanguage, environment.supportedLanguages);
+
+    const onNavigationEnd = this.router.events.pipe(filter(event => event instanceof NavigationEnd));
+
+    // Change page title on navigation or language change, based on route data
+    merge(this.translateService.onLangChange, onNavigationEnd)
+      .pipe(
+        map(() => {
+          let route = this.activatedRoute;
+          while (route.firstChild) {
+            route = route.firstChild;
+          }
+          return route;
+        }),
+        filter(route => route.outlet === 'primary'),
+        switchMap(route => route.data),
+        untilDestroyed(this)
+      )
+      .subscribe(event => {
+        const title = event.title;
+        if (title) {
+          this.titleService.setTitle(this.translateService.instant(title));
+        }
+      });
+  }
+
+  ngOnDestroy() {
+    this.i18nService.destroy();
+  }
 }

@@ -1,84 +1,90 @@
 <div class="mat-elevation-z8 table-width" style="margin-bottom: 2%">
-    <mat-form-field>
-        <mat-label><strong>Filter </strong></mat-label>
-        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Enter filter value">
-    </mat-form-field>
-    <table mat-table matSort aria-label="Elements">
+  <mat-form-field>
+    <mat-label style="margin-left: 3%;"><strong>Filter </strong></mat-label>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Enter filter value" />
+  </mat-form-field>
+  <table mat-table matSort aria-label="Elements">
+    <ng-container *ngFor="let column of selectedColumns" [matColumnDef]="column.name" [ngSwitch]="column.type">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ column.label }}</th>
 
-        <ng-container *ngFor="let column of selectedColumns" [matColumnDef]="column.name" [ngSwitch]="column.type">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> {{column.label}} </th>
+      <ng-container *ngSwitchCase="'boolean'">
+        <ng-container *ngTemplateOutlet="boolean"></ng-container>
+      </ng-container>
 
-            <ng-container *ngSwitchCase="'boolean'">
-                <ng-container *ngTemplateOutlet="boolean"></ng-container>
-            </ng-container>
+      <ng-container *ngSwitchCase="'currency'">
+        <ng-container *ngTemplateOutlet="currency"></ng-container>
+      </ng-container>
 
-            <ng-container *ngSwitchCase="'currency'">
-                <ng-container *ngTemplateOutlet="currency"></ng-container>
-            </ng-container>
+      <ng-container *ngSwitchCase="'date'">
+        <ng-container *ngTemplateOutlet="date"></ng-container>
+      </ng-container>
 
-            <ng-container *ngSwitchCase="'date'">
-                <ng-container *ngTemplateOutlet="date"></ng-container>
-            </ng-container>
+      <ng-container *ngSwitchCase="'decimal'">
+        <ng-container *ngTemplateOutlet="decimal"></ng-container>
+      </ng-container>
 
-            <ng-container *ngSwitchCase="'decimal'">
-                <ng-container *ngTemplateOutlet="decimal"></ng-container>
-            </ng-container>
+      <ng-container *ngSwitchCase="'number'">
+        <ng-container *ngTemplateOutlet="number"></ng-container>
+      </ng-container>
 
-            <ng-container *ngSwitchCase="'number'">
-                <ng-container *ngTemplateOutlet="number"></ng-container>
-            </ng-container>
+      <ng-container *ngSwitchCase="'percent'">
+        <ng-container *ngTemplateOutlet="percent"></ng-container>
+      </ng-container>
 
-            <ng-container *ngSwitchCase="'percent'">
-                <ng-container *ngTemplateOutlet="percent"></ng-container>
-            </ng-container>
+      <ng-container *ngSwitchDefault>
+        <td mat-cell *matCellDef="let item" matTooltipPosition="above">
+          {{ item[column.name] }}
+        </td>
+      </ng-container>
 
-            <ng-container *ngSwitchDefault>
-                <td mat-cell *matCellDef="let item" matTooltipPosition="above">
-                    {{item[column.name]}} </td>
-            </ng-container>
+      <ng-template #boolean>
+        <td mat-cell *matCellDef="let item" matTooltipPosition="above">
+          {{ item[column.name] === 'false' ? 'No' : 'Yes' }}
+        </td>
+      </ng-template>
 
-            <ng-template #boolean>
-                <td mat-cell *matCellDef="let item" matTooltipPosition="above">
-                    {{item[column.name] === 'false' ? 'No': 'Yes'}}
-                </td>
-            </ng-template>
+      <ng-template #currency>
+        <td mat-cell *matCellDef="let item" matTooltipPosition="above">
+          {{ item[column.name] | currency }}
+        </td>
+      </ng-template>
 
-            <ng-template #currency>
-                <td mat-cell *matCellDef="let item" matTooltipPosition="above">
-                    {{item[column.name] | currency}}
-                </td>
-            </ng-template>
+      <ng-template #date>
+        <td mat-cell *matCellDef="let item" matTooltipPosition="above">
+          {{ item[column.name] | date: 'format':'DD/MM/YYYY' }}
+        </td>
+      </ng-template>
 
-            <ng-template #date>
-                <td mat-cell *matCellDef="let item" matTooltipPosition="above">
-                    {{item[column.name] | date:'format': 'DD/MM/YYYY'}}
-                </td>
-            </ng-template>
+      <ng-template #decimal>
+        <td mat-cell *matCellDef="let item" matTooltipPosition="above">
+          {{ item[column.name] | number: '2.2' }}
+        </td>
+      </ng-template>
 
-            <ng-template #decimal>
-                <td mat-cell *matCellDef="let item" matTooltipPosition="above">
-                    {{item[column.name] | number: '2.2'}}
-                </td>
-            </ng-template>
+      <ng-template #number>
+        <td mat-cell *matCellDef="let item" matTooltipPosition="above">
+          {{ item[column.name] | number }}
+        </td>
+      </ng-template>
 
-            <ng-template #number>
-                <td mat-cell *matCellDef="let item" matTooltipPosition="above">
-                    {{item[column.name] | number}}
-                </td>
-            </ng-template>
+      <ng-template #percent>
+        <td mat-cell *matCellDef="let item" matTooltipPosition="above">
+          {{ item[column.name] | percent }}
+        </td>
+      </ng-template>
+    </ng-container>
 
-            <ng-template #percent>
-                <td mat-cell *matCellDef="let item" matTooltipPosition="above">
-                    {{item[column.name] | percent }}
-                </td>
-            </ng-template>
-        </ng-container>
+    <tr mat-header-row *matHeaderRowDef="allColumnNames"></tr>
+    <tr mat-row *matRowDef="let row; columns: allColumnNames"></tr>
+  </table>
 
-        <tr mat-header-row *matHeaderRowDef="allColumnNames"></tr>
-        <tr mat-row *matRowDef="let row; columns: allColumnNames;"></tr>
-    </table>
-
-    <mat-paginator #paginator [length]="dataSource?.data.length" [pageIndex]="0" [pageSize]="5"
-        [pageSizeOptions]="[5, 10, 25, 50, 100, 250]" showFirstLastButtons>
-    </mat-paginator>
+  <mat-paginator
+    #paginator
+    [length]="dataSource?.data.length"
+    [pageIndex]="0"
+    [pageSize]="5"
+    [pageSizeOptions]="[5, 10, 25, 50, 100, 250]"
+    showFirstLastButtons
+  >
+  </mat-paginator>
 </div>

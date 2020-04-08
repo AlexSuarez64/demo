@@ -1,47 +1,27 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "module": "esnext",
     "moduleResolution": "node",
-    "importHelpers": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
     "target": "es2015",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "types": [
-      "node",
-      "lodash",
-      "express",
-      "zone.js"
-    ],
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
+    "baseUrl": "./",
     "paths": {
-      "@app/*": [
-        "app/*"
-      ],
-      "header": [
-        "dist/header/header",
-        "dist/header"
-      ],
-      "table": [
-        "dist/table/table",
-        "dist/table"
-      ]
+      "@app/*": ["src/app/*"],
+      "@env/*": ["src/environments/*"],
+      "header": ["dist/header/header", "dist/header"],
+      "table": ["dist/table/table", "dist/table"]
     }
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "preserveWhitespaces": true
   }
 }

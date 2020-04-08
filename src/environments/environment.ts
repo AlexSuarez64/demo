@@ -1,5 +1,13 @@
+import { env } from './.env';
+
 export const environment = {
   production: false,
+  hmr: true,
+  version: env.npm_package_version + '-dev',
+  serverUrl: '/api',
+  defaultLanguage: 'en-US',
+  supportedLanguages: ['en-US', 'fr-FR'],
+
   envName: 'ausdev',
   baseUrl: 'https://hcc-dev.oktapreview.com',
   OktaBaseUrl: 'https://hcc-dev.oktapreview.com/api/v1/',
@@ -22,6 +30,6 @@ export const environment = {
   // model ids
   modelIds: [
     { name: 'Quotes', id: '53BA044D-8F58-4BB4-9431-F81F128D5672' },
-    { name: 'Quotes2', id: '3F3DED79-7CF2-43E0-9A13-8D5F32300D2B' },
+    { name: 'Quotes2', id: '3F3DED79-7CF2-43E0-9A13-8D5F32300D2B' }
   ]
 };

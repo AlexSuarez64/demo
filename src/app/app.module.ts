@@ -1,42 +1,44 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
-import { LayoutModule } from '@angular/cdk/layout';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { TranslateModule } from '@ngx-translate/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
-import { AppComponent } from './app.component';
-import { SelectionComponent } from './selection.component';
+import { environment } from '@env/environment';
+import { CoreModule } from '@app/core';
+import { SharedModule } from '@app/shared';
+import { HomeModule } from './home/home.module';
+import { DMVModule } from './dmv/dmv.module';
 import { HeaderModule } from 'header';
 import { TableModule } from 'table';
-
-import { services } from './services';
+import { ShellModule } from './shell/shell.module';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SelectionComponent
-  ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
+    FormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot(),
+    BrowserAnimationsModule,
     MaterialModule,
+    CoreModule,
+    SharedModule,
+    ShellModule,
     HeaderModule,
     TableModule,
-    BrowserAnimationsModule,
-    FlexLayoutModule.withConfig({
-      useColumnBasisZero: false,
-      printWithBreakpoints: ['md', 'lt-lg', 'lt-xl', 'gt-sm', 'gt-xs']
-    }),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    LayoutModule,
+    HomeModule,
+    DMVModule,
+    AppRoutingModule // must be imported as the last module as it contains the fallback route
   ],
-  providers: [...services],
+  declarations: [AppComponent],
+  providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
