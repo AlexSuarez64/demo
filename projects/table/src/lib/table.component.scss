@@ -1,3 +1,8 @@
-.mat-header-cell {
+.mat-sort-header {
   color: crimson;
+}
+
+td.mat-cell {
+  text-align: center !important;
+  justify-content: center !important;
 }
