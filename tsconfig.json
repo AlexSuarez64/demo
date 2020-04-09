@@ -17,8 +17,8 @@
     "paths": {
       "@app/*": ["src/app/*"],
       "@env/*": ["src/environments/*"],
-      "header": ["dist/header/header", "dist/header"],
-      "table": ["dist/table/table", "dist/table"]
+      "header": ["libs/header/header", "libs/header"],
+      "table": ["libs/table/table", "libs/table"]
     }
   },
   "angularCompilerOptions": {

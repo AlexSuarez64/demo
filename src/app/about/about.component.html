@@ -11,13 +11,36 @@
       projects directory of the root.
     </p>
 
-    <h3>header component</h3>
+    <h3>Pre-Build Steps</h3>
+
+    <ol>
+      <li>
+        <strong>Remove</strong> the enteries in the dependencies section <strong>header</strong> &
+        <strong>table</strong> from the package.json in the root. (Cut to the clip board, needed in step 5)
+      </li>
+      <li>Then run <strong>npm install</strong>.</li>
+      <li>Then run <strong>mkdir libs</strong>.</li>
+      <li>
+        Run <strong>npm run all</strong>. This step will build the libraries that are needed to build the base
+        application.
+      </li>
+      <li>
+        <strong>Restore</strong> the enteries in the dependencies section <strong>header</strong> &
+        <strong>table</strong> to package.json in the root.
+      </li>
+      <li>Then run <strong>npm install</strong>.</li>
+      <li>Then run <strong>npm start</strong> or <strong>npm run build</strong>.</li>
+    </ol>
+
+    <h3>Compontents</h3>
+
+    <h4>header component</h4>
 
     <p>Pass a description to display. Field name is "header".</p>
 
-    <h3>table component</h3>
+    <h4>table component</h4>
 
-    <p>Table has 3 variable that need to be passed in.</p>
+    <p>Table has 4 variable that need to be passed in.</p>
 
     <h4>data</h4>
 
@@ -38,40 +61,8 @@
       The selectedColumns are all the columns that are marked as selected in the Sitecore list.
     </p>
 
-    <h3>Pre-Build Steps</h3>
+    <h4>model</h4>
 
-    <p>
-      1) You must remove the library build files (header, table) from the package.json in the root and then run
-      <strong>npm i -f</strong>. (Save this in the clip board it is needed in step 3)
-    </p>
-    <p>
-      2) Run <strong>npm run all</strong>. This step will build the libraries that are needed to build the base
-      application.
-    </p>
-    <p>
-      3) Restore the libaries saved in the clip board to the package.json file in the root and then run
-      <strong>npm i -f</strong>
-    </p>
-    <p>
-      4) The application should be built. You can now run <strong>npm start</strong> or <strong>npm run build</strong>.
-    </p>
-
-    <h2>Development server</h2>
-
-    <p>
-      Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you
-      change any of the source files.
-    </p>
-
-    <h2>Build</h2>
-
-    <p>
-      Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod`
-      flag for a production build.
-    </p>
-
-    <h2>Further help</h2>
-
-    <p>To get more help on the Angular CLI use `ng help` or go check out the <strong>Angular CLI</strong>.</p>
+    <p><strong>model</strong> is the model that was selected to display.</p>
   </mat-card>
 </div>

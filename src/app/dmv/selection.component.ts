@@ -4,7 +4,6 @@ import { Subscription, Subject } from 'rxjs';
 import { ModelService, TableService } from './services';
 import { takeUntil } from 'rxjs/operators';
 import { MatTableDataSource } from '@angular/material/table';
-import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'selection',
@@ -27,8 +26,8 @@ export class SelectionComponent implements OnInit, OnDestroy {
   dataSub: Subscription;
   modelSub: Subscription;
   modelIdSub: Subscription;
-  private destroy$ = new Subject();
   dataSource: MatTableDataSource<any[]>;
+  private destroy$ = new Subject();
 
   constructor(private modelService: ModelService, private tableService: TableService) {}
 

@@ -20,10 +20,10 @@
     "prettier:check": "prettier --list-different \"./{src,e2e}/**/*.{ts,js,html,scss}\"",
     "postinstall": "npm run prettier -s",
     "generate": "ng generate",
-    "build:header": "npm run buildlib header && cd dist && cd header && npm pack . && cd .. && cd ..",
-    "build:table": "npm run buildlib table && cd dist && cd table && npm pack . && cd .. && cd ..",
-    "clean:header": "cd dist && del header*.*  && cd ..",
-    "clean:table": "cd dist && del table*.*  && cd ..",
+    "build:header": "npm run buildlib header && cd libs && cd header && npm pack . && cd .. && cd ..",
+    "build:table": "npm run buildlib table && cd libs && cd table && npm pack . && cd .. && cd ..",
+    "clean:header": "cd libs && del header*.*  && cd ..",
+    "clean:table": "cd libs && del table*.*  && cd ..",
     "all": "npm-run-all clean:* build:*"
   },
   "dependencies": {
@@ -48,8 +48,8 @@
     "rxjs": "^6.5.2",
     "tslib": "^1.11.1",
     "zone.js": "^0.10.3",
-    "header": "file:./dist/header/header-1.0.0.tgz",
-    "table": "file:./dist/table/table-1.0.0.tgz"
+    "header": "file:./libs/header/header-1.0.0.tgz",
+    "table": "file:./libs/table/table-1.0.0.tgz"
   },
   "devDependencies": {
     "@angular-builders/jest": "^9.0.1",

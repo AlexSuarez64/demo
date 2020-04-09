@@ -14,13 +14,6 @@ export class ModelService {
       .pipe(catchError(this.handleError));
   }
 
-  getModelId(model: string, base: string): Observable<any> {
-    const url = `${base}${model}`;
-    return this.hc
-      .get<any>(url, { responseType: 'json' })
-      .pipe(catchError(this.handleError));
-  }
-
   private handleError(err: any) {
     // in a real world app, we may send the server to some remote logging infrastructure
     // instead of just logging it to the console
