@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError, of } from 'rxjs';
+import { environment } from '@env/environment';
 
 import quotes from '../data/racv-quote-data.json';
 import quotes2 from '../data/racv-quote-data2.json';
+import { catchError } from 'rxjs/operators';
 
 @Injectable()
 export class TableService {
@@ -12,12 +14,26 @@ export class TableService {
   constructor(private hc: HttpClient) {}
 
   getData(model: string, base: string, path: string): Observable<any[]> {
-    if (model === 'Quotes') {
-      this.data = quotes;
-    } else if (model === 'Quotes2') {
-      this.data = quotes2;
+    switch (model) {
+      case 'Quotes':
+        this.data = quotes;
+        return of(this.data);
+      case 'Quotes2':
+        this.data = quotes2;
+        return of(this.data);
+      default:
+        this.getAPIData(model).subscribe(value => {
+          this.data = value;
+          return of(this.data);
+        });
     }
-    return of(this.data);
+  }
+
+  getAPIData(model: string): Observable<any[]> {
+    const url = `${environment.OCTAAPI_END_POINT}/${model}`;
+    return this.hc
+      .get<any[]>(url, { responseType: 'json' })
+      .pipe(catchError(this.handleError));
   }
 
   private handleError(err: any) {
