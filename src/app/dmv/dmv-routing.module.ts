@@ -6,7 +6,6 @@ import { DMVComponent } from './dmv.component';
 import { Shell } from '@app/shell/shell.service';
 
 const routes: Routes = [
-  // Module is lazy loaded, see app-routing.module.ts
   Shell.childRoutes([{ path: 'dmv', component: DMVComponent, data: { title: extract('Dynamic Model View') } }])
 ];
 

@@ -16,5 +16,18 @@
         "files": ["/assets/**", "/*.woff", "/*.woff2", "/*.ttf", "/*.eot"]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-performance",
+      "urls": [
+        "/shipments"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 100,
+        "maxAge": "3d"
+      }
+    }
   ]
 }
